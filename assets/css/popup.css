@@ -1,0 +1,48 @@
+#floatingPrompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.question {
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    font-size: 1.7rem;
+}
+.true {
+    background-color: #4CAF50;
+}
+.false {
+    background-color: rgb(219, 37, 37);
+}
+
+button:hover {
+    background-color: skyblue;
+}

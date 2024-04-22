@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*::selection {
+    background-color: lightcoral;
+    color: #fff;
+}
+
+*::-webkit-scrollbar {
+    width: .6rem;
+    height: .6rem;
+}
+
+::-webkit-scrollbar-track {
+    background: aliceblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
+
+body {
+    background-color: lavender;
+
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+    height: 85dvh;
+    width: 100dvw;
+    overflow-x: scroll;
+}
+
+.nodes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* background-color: aliceblue; */
+    gap: 2rem;
+
+    height: calc(85dvh - 4rem);
+    padding: 1.5rem;
+    margin: 1rem;
+
+    border-radius: 10px;
+    /* border: solid 2px black; */
+}
+
+.node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3.7rem;
+    width: 3.7rem;
+
+    background-color: aliceblue;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+
+    border-radius: 50%;
+    border: solid 2px black;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 15dvh;
+
+    background-color: black;
+}
+
+.teams > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-family: monospace;
+
+    /* background-color: aliceblue; */
+    border: solid 2px aliceblue;
+    padding: .2rem 4rem;
+    border-radius: 4px;
+    /* height: 100%; */
+}
+.teams > div:nth-child(1) {
+    background-color: blue ;
+}
+.teams > div:nth-child(2) {
+    background-color: red ;
+}
+
+
+.a_team, .b_team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+.who_turn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    margin: 2rem;
+
+    font-size: 1.3rem;
+    
+    border: solid 2px black;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+.formula {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin: 2rem;
+
+    font-size: 1.3rem;
+    
+    border: solid 2px black;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+.queue {
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    
+    color: white;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+
+    height: 100dvh;
+    width: 100dvw;
+}
