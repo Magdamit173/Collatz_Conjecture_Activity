@@ -156,6 +156,9 @@ body {
     z-index: 1;
     background-color: black;
     
+
+    text-align: center;
+    
     color: white;
 
     display: none;
